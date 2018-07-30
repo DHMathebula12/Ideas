@@ -7,7 +7,7 @@ import { IdeasService } from '../ideas.service';
   styleUrls: ['./create-idea.component.scss']
 })
 export class CreateIdeaComponent implements OnInit {
-  header: string;
+  heading: string;
   body: string;
 
   constructor(private ideasService: IdeasService) {}
@@ -16,7 +16,7 @@ export class CreateIdeaComponent implements OnInit {
 
   createIdea() {
     const idea = {
-      header: this.header,
+      heading: this.heading,
       body: this.body
     };
 

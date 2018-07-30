@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./idea.component.scss']
 })
 export class IdeaComponent implements OnInit {
-  @Input() idea: { header: string; body: string };
+  @Input() idea: { heading: string; body: string };
   constructor() {}
 
   ngOnInit() {}

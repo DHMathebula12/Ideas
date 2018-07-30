@@ -3,7 +3,7 @@ import { Http } from '@angular/http';
 
 @Injectable()
 export class IdeasService {
-  url = 'http://localhost:9001';
+  url = 'http://localhost:8080';
   constructor(private http: Http) {}
 
   getIdeas() {
@@ -26,7 +26,7 @@ export class IdeasService {
     });
   }
 
-  createIdea(note: { header: string; body: string }) {
+  createIdea(note: { heading: string; body: string }) {
     return this.http.post(this.url + '/ideas', note);
   }
 }
